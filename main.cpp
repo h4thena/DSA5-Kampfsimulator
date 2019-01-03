@@ -5,6 +5,8 @@
 #define FULLSCREEN Default // Fullscreen | Default
 
 #include <SFML/Graphics.hpp>
+#include <string>
+#include "Entity.h"
 #include <iostream>
 
 unsigned battlefieldSize = 12;
@@ -41,6 +43,7 @@ int main() {
 	window.setFramerateLimit(10);
 
 	window.clear(sf::Color::Black);
+
 	while (window.isOpen()) {
 		sf::Event event;
 		while (window.pollEvent(event)) {
